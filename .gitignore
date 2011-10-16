@@ -1,0 +1,6 @@
+bin/
+lib/
+.classpath
+sessionDocManagerDebugTrace.del
+.settings/
+.project

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project lces-asset-deployer">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="bin/lces-asset-deployer.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/adobe-livecycle-client.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/commons-codec-1.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/adobe-usermanager-client.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/adobe-repository-client.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/adobe-utilities.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/jbossall-client.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="lib/snakeyaml-1.8.jar"/>
+        </jar>
+    </target>
+</project>
